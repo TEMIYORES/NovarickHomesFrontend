@@ -1,0 +1,62 @@
+@use "../../../../variables.scss" as *;
+.buyback-section7 {
+  width: 100%;
+  .buyback-section7-container {
+    width: 85%;
+    margin: 0px auto;
+    .buyback-section7-header {
+      color: $green;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    .buyback-section7-subheader {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .buyback-section7-item-container {
+      display: flex;
+      gap: 1rem;
+
+      .buyback-section7-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        h2 {
+          font-size: 2rem;
+        }
+        ul {
+          list-style: none;
+          li {
+            font-size: 1.25rem;
+            font-weight: 600;
+          }
+        }
+
+        .buyback-section7-item-button {
+          width: fit-content;
+          padding: 0.5em 1em;
+          font-size: 1rem;
+          text-decoration: none;
+          text-transform: capitalize;
+          background-color: $green;
+          color: white;
+          outline: none;
+          border: none;
+          border-radius: 5px;
+          transition: 0.3s all ease;
+          &:hover {
+            background-color: $gold;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

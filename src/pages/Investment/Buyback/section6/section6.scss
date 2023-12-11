@@ -1,0 +1,62 @@
+@use "../../../../variables.scss" as *;
+.section6 {
+  width: 90%;
+  margin: 7rem auto;
+  .section6-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    .section6-header {
+      color: $green;
+      font-size: 2.5rem;
+    }
+    .section6-item-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 30px;
+
+      .section6-item {
+        width: 30%;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $gray;
+        padding: 1.5rem;
+        border-radius: 5px;
+        transition: 0.3s all ease;
+        &:hover {
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+        .section6-item-header {
+          color: $gold;
+          font-size: 1.5rem;
+        }
+        .section6-item-body {
+          text-align: center;
+        }
+      }
+    }
+    .about-section6-register {
+      width: fit-content;
+      padding: 0.5em 0.8em;
+      font-size: 1rem;
+      text-decoration: none;
+
+      background-color: $green;
+      color: white;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      transition: 0.3s all ease;
+      &:hover {
+        background-color: $gold;
+        cursor: pointer;
+      }
+    }
+  }
+}

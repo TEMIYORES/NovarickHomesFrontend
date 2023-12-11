@@ -1,0 +1,147 @@
+@use "../../../../variables.scss" as *;
+.ruby3-section1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5em auto 1em;
+  @media screen and (max-width: 768px) {
+    margin-top: 3rem;
+  }
+  .ruby3-section1-container {
+    display: flex;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 50px;
+    }
+    .ruby3-section1-container-left {
+      width: 50%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      margin: auto;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 425px) {
+        width: 100%;
+      }
+      .ruby3-section1-container-top,
+      .ruby3-section1-container-middle,
+      .ruby3-section1-container-bottom {
+        display: flex;
+        width: 90%;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        @media screen and (max-width: 768px) {
+          text-align: center;
+        }
+      }
+      .ruby3-section1-container-top {
+        flex-direction: column;
+        .ruby3-section1-container-top-title1 {
+          font-size: 2rem;
+          font-weight: 700;
+          font-family: "Domine", serif;
+          margin-bottom: 1rem;
+          color: $gold;
+          @media screen and (max-width: 768px) {
+            font-size: 2.5rem;
+          }
+          @media screen and (max-width: 425px) {
+            font-size: 2rem;
+          }
+        }
+        .ruby3-section1-container-top-title2 {
+          font-size: 2.5rem;
+          font-weight: 800;
+          text-transform: capitalize;
+          font-family: "Domine", serif;
+          line-height: 3.5rem;
+          color: $green;
+          @media screen and (max-width: 768px) {
+            margin-bottom: 1rem;
+          }
+          @media screen and (max-width: 425px) {
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+        }
+        .ruby3-section1-container-top-title3 {
+          display: flex;
+          align-items: center;
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: $gold;
+          @media screen and (max-width: 768px) {
+            justify-content: center;
+          }
+          .ruby3-section1-container-top-title3-logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            img {
+              width: 200px;
+              height: 60px;
+              @media screen and (max-width: 320px) {
+                width: 150px;
+                height: 50px;
+              }
+            }
+            .ruby3-section1-container-top-title3-logo-logoName {
+              font-size: 30px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .ruby3-section1-container-bottom {
+        display: flex;
+        gap: 20px;
+        @media screen and (max-width: 768px) {
+          justify-content: center;
+        }
+      }
+    }
+    .ruby3-section1-container-right {
+      align-items: start;
+      margin-right: 20px;
+      width: 50%;
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        margin: 0 auto;
+      }
+      @media screen and (max-width: 425px) {
+        width: 90%;
+      }
+    }
+    .ruby3-section1-container-bottom {
+      @media screen and (max-width: 425px) {
+        display: flex;
+        flex-direction: column;
+      }
+      .ruby3-section1-container-bottom-button {
+        display: inline-block;
+        background-color: $green;
+        color: white;
+        padding: 10px 18px;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 6px;
+        border: none;
+        transition: 0.2s ease all;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--buttonHover, $gold);
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

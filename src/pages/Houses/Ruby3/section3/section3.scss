@@ -1,0 +1,53 @@
+.ruby3-section3 {
+  width: 100%;
+  margin: 6rem auto;
+  .ruby3-section3-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    .ruby3-section3-container-top {
+      color: #232221;
+      .ruby3-section3-container-top-title1 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+      }
+      .ruby3-section3-container-top-title2 {
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
+    .ruby3-section3-container-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 2rem auto;
+      justify-content: space-evenly;
+      row-gap: 10px;
+
+      .ruby3-section3-container-bottom-item {
+        width: 25%;
+        padding: 1rem 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        color: #232221;
+        @media screen and (max-width: 425px) {
+          width: 50%;
+        }
+        .ruby3-section3-container-bottom-item-icon {
+          flex: 3;
+        }
+        &:nth-child(odd) > .ruby3-section3-container-bottom-item-icon {
+          font-size: 70px;
+        }
+        &:nth-child(even) > .ruby3-section3-container-bottom-item-icon {
+          font-size: 70px;
+        }
+        .ruby3-section3-container-bottom-item-desc {
+          flex: 2;
+        }
+      }
+    }
+  }
+}

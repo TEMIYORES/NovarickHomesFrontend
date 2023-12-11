@@ -1,0 +1,57 @@
+@use "../../../../variables.scss" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Aubrey&display=swap");
+@font-face {
+  font-family: "saturday";
+  src: url("../../../assets/fonts/Saturday\ August.ttf");
+}
+// USAGE
+.alafia {
+  margin: 10rem 0px;
+  display: flex;
+  gap: 3rem;
+  padding: 0px 2rem;
+  .alafia-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+    .alafia-header {
+      font-family: "Aubrey";
+      font-size: 6rem;
+      letter-spacing: 1px;
+      color: $green;
+      text-align: center;
+    }
+    .alafia-sub-header {
+      margin-top: -30px;
+      margin-bottom: 2rem;
+      font-family: "saturday";
+      font-size: 3rem;
+      color: $gold;
+      text-align: center;
+    }
+    .alafia-sub-heading {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .alafia-sub-heading2 {
+      width: max-content;
+      font-size: 1.5rem;
+      text-align: center;
+      background-color: $gold;
+      color: white;
+      padding: 0px 1em;
+      margin: 1rem auto;
+    }
+    .alafia-text-container {
+      margin: 0px auto;
+      .alafia-text {
+        margin-bottom: 10px;
+        text-align: justify;
+      }
+    }
+  }
+}

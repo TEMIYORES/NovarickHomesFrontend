@@ -1,0 +1,55 @@
+@use "../../../../variables.scss" as *;
+.ruby2-section3 {
+  width: 100%;
+  margin: 6rem auto;
+  .ruby2-section3-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    .ruby2-section3-container-top {
+      color: #232221;
+      .ruby2-section3-container-top-title1 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        color: $green;
+      }
+      .ruby2-section3-container-top-title2 {
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
+    .ruby2-section3-container-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 2rem auto;
+      justify-content: space-evenly;
+      row-gap: 10px;
+
+      .ruby2-section3-container-bottom-item {
+        width: 25%;
+        padding: 1rem 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        // color: #232221;
+        @media screen and (max-width: 480px) {
+          width: 50%;
+        }
+        .ruby2-section3-container-bottom-item-icon {
+          flex: 3;
+          color: $green;
+          font-size: 70px;
+        }
+        &:nth-child(odd) > .ruby2-section3-container-bottom-item-icon {
+          font-size: 70px;
+        }
+
+        .ruby2-section3-container-bottom-item-desc {
+          flex: 2;
+        }
+      }
+    }
+  }
+}

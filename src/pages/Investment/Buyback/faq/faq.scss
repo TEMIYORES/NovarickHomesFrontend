@@ -1,0 +1,48 @@
+@use "../../../../variables.scss" as *;
+.faq {
+  margin-top: 7rem;
+
+  .faq-container {
+    width: 70%;
+    margin: 0px auto;
+    .faq-header {
+      font-size: 2.5rem;
+      color: $green;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .accordion-wrapper {
+      display: flex;
+      justify-content: center;
+      .accordion {
+        width: 100%;
+        .accordion-item {
+          width: 100%;
+          background-color: $gray;
+          margin-bottom: 1rem;
+          padding: 2rem;
+          cursor: pointer;
+          .accordion-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            color: $green;
+          }
+
+          .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0, 1, 0, 1);
+          }
+          .accordion-content.show {
+            height: auto;
+            max-height: 9999px;
+            display: block;
+            transition: all 0.3s cubic-bezier(1, 0, 1, 0);
+          }
+        }
+      }
+    }
+  }
+}

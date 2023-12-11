@@ -1,0 +1,101 @@
+@use "../../../../variables.scss" as *;
+.buyback-section5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #e2e2e2;
+
+  .buyback-section5-container-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  .buyback-section5-container-desc {
+    text-align: center;
+    font-size: 1.3rem;
+    @media screen and (max-width: 425px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  .buyback-section5-container {
+    width: 90%;
+    padding: 5rem 4rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+    @media screen and (max-width: 1080px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+      gap: 20px;
+      padding: 3rem 2rem;
+    }
+    @media screen and (max-width: 425px) {
+      padding: 0px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .buyback-section5-container-left {
+      width: 50%;
+      @media screen and (max-width: 425px) {
+        width: 95%;
+        margin-top: 30px;
+      }
+    }
+
+    .buyback-section5-container-right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 425px) {
+        width: 90%;
+      }
+      .buyback-section5-container-right-heading {
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+        font-weight: 600;
+        text-align: center;
+      }
+      ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          font-size: 1rem;
+          padding: 0.75em;
+          span {
+            &:nth-child(even) {
+              font-weight: 600;
+            }
+          }
+          &:nth-child(odd) {
+            background-color: #fafafa;
+          }
+        }
+      }
+      .buyback-section5-container-right-button {
+        display: inline-block;
+        background-color: $green;
+        color: white;
+        padding: 0.75rem 1rem;
+        font-weight: bold;
+        font-size: 1em;
+        border-radius: 6px;
+        border: none;
+        transition: 0.2s ease all;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--buttonHover, $gold);
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

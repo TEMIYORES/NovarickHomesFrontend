@@ -1,0 +1,119 @@
+@use "../../../../variables.scss" as *;
+.caribbean-section1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .caribbean-section1-container {
+    .caribbean-section1-container-left {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      margin: auto;
+
+      .caribbean-section1-container-top,
+      .caribbean-section1-container-middle,
+      .caribbean-section1-container-bottom {
+        display: flex;
+        width: 90%;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+      }
+      .caribbean-section1-container-top {
+        flex-direction: column;
+        .caribbean-section1-container-top-title1 {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        .caribbean-section1-container-top-title2 {
+          font-size: 2.5rem;
+          font-weight: 800;
+        }
+        .caribbean-section1-container-top-title3 {
+          display: flex;
+          align-items: center;
+          font-size: 1.5rem;
+          font-weight: 700;
+          .caribbean-section1-container-top-title3-logo {
+            display: flex;
+            align-items: center;
+
+            cursor: pointer;
+            img {
+              width: 200px;
+              height: 60px;
+              @media screen and (max-width: 320px) {
+                width: 150px;
+                height: 50px;
+              }
+            }
+            .caribbean-section1-container-top-title3-logo-logoName {
+              font-size: 30px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .caribbean-section1-container-middle {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        .caribbean-section1-container-middle-item {
+          display: flex;
+          flex-direction: column;
+          .caribbean-section1-container-middle-item-title {
+            font-size: 30px;
+            font-weight: 700;
+          }
+        }
+      }
+      .caribbean-section1-container-bottom {
+        display: flex;
+        gap: 20px;
+      }
+    }
+    .caribbean-section1-container-right {
+      align-items: start;
+      margin-right: 20px;
+      width: 50%;
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        margin-right: 0px;
+        margin: 0 auto;
+      }
+      @media screen and (max-width: 425px) {
+        width: 100%;
+      }
+    }
+    .caribbean-section1-container-bottom {
+      @media screen and (max-width: 425px) {
+        display: flex;
+        flex-direction: column;
+      }
+      .caribbean-section1-container-bottom-button {
+        display: inline-block;
+        background-color: $green;
+        color: white;
+        padding: 10px 18px;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 6px;
+        border: none;
+        transition: 0.2s ease all;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--buttonHover, $gold);
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 13em;
+  }
+}

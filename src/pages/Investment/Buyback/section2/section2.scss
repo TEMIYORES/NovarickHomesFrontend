@@ -1,0 +1,40 @@
+.buyback-section2 {
+  width: 90%;
+  display: flex;
+  margin: 10rem auto;
+  gap: 50px;
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+  }
+  .buyback-section2-left {
+    flex: 1;
+  }
+  .buyback-section2-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .buyback-section2-right-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .buyback-section2-right-desc {
+      span {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+    .buyback-section2-right-property {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .buyback-section2-right-property-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+}
