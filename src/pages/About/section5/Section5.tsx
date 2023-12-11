@@ -1,4 +1,3 @@
-import React from "react";
 import "./section5.scss";
 import shield from "./shield.png";
 import review from "./review.png";

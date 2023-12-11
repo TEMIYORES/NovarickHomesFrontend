@@ -1,12 +1,4 @@
-import React from "react";
-import {
-  Img81,
-  Img82,
-  Img83,
-  Img84,
-  Img85,
-  Img86,
-} from "../../../assets/images";
+import { Img81, Img82, Img84 } from "../../../assets/images";
 import "./section3.scss";
 import ebun from "./ebun.jpeg";
 import frank from "./frank.jpeg";

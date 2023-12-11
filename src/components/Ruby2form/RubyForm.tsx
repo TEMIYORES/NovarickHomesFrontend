@@ -1,36 +1,13 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 import "./rubyform.scss";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import Countries from "../../assets/data/country.json";
-import emailjs from "@emailjs/browser";
 const Rubyform = () => {
-  const form = useRef();
-  const [phoneNumber, setPhoneNumber] = useState();
-  console.log(form.current);
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_sn3p1mt",
-        "template_whdw3vg",
-        form.current,
-        "ObFSpjExzwsLupdAX"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+  const [phoneNumber, setPhoneNumber] = useState<any>();
   return (
     <>
-      <form className="rubyform" ref={form} onSubmit={sendEmail}>
+      <form className="rubyform">
         <div className="rubyform-container">
           <div className="rubyform-container-title">Reserve Your Spot</div>
           <div className="rubyform-container-top">
@@ -73,7 +50,6 @@ const Rubyform = () => {
                 }}
               />
             </div>
-      
           </div>
           <div className="rubyform-container-center">
             <div className="rubyform-container-center-input">
@@ -116,8 +92,8 @@ const Rubyform = () => {
               <div className="input-title">Comments*</div>
               <textarea
                 name="comment"
-                cols="30"
-                rows="5"
+                cols={30}
+                rows={5}
                 placeholder="Enter comments* (Optional)"
               ></textarea>
             </div>

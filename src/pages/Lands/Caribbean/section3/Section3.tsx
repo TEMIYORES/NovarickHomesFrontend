@@ -1,4 +1,3 @@
-import React from "react";
 import court from "./court.png";
 import electricity from "./electric-meter.png";
 import club from "./mirror-ball.png";
@@ -6,7 +5,6 @@ import playground from "./playground.png";
 import police from "./post.png";
 import "./section3.scss";
 import security from "./shield.png";
-import shuttle from "./shuttle.png";
 import smartcity from "./smart-city.png";
 import supermarket from "./supermarket.png";
 import water from "./water.png";

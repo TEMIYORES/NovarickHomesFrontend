@@ -1,8 +1,6 @@
 import  { useEffect, useState } from "react";
 import "./carousel.scss";
-import Carousel from "react-elastic-carousel";
 import { Img22, Img40, Img23 } from "../../assets/images";
-import { StarHalfOutlined, Star } from "@mui/icons-material";
 const Testimonials = () => {
   const [isMobile, setIsMobile] = useState(true);
 

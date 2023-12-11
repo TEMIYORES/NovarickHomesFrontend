@@ -1,4 +1,3 @@
-import React from "react";
 import "./ridgewoodlocation.scss";
 const RidgewoodLocation = () => {
   return (

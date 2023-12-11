@@ -1,4 +1,3 @@
-import React from "react";
 import "./section8.scss";
 const data1 = [
   {

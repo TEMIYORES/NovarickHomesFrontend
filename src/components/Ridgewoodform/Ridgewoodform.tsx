@@ -1,32 +1,15 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./ridgewoodform.scss";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import Countries from "../../assets/data/country.json";
-import emailjs from "@emailjs/browser";
-const Ridgewoodform = ({ name }:any) => {
+const Ridgewoodform = ({ name }: any) => {
   const form = useRef();
   const [phoneNumber, setPhoneNumber] = useState<string>();
   console.log(form.current);
 
-  const sendEmail = (e:any) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       "service_sn3p1mt",
-  //       "template_whdw3vg",
-  //       form.current,
-  //       "ObFSpjExzwsLupdAX"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
   };
   return (
     <>
@@ -81,15 +64,6 @@ const Ridgewoodform = ({ name }:any) => {
             </div>
           </div>
           <div className="ridgewoodform-container-center">
-            {/* <div className="ridgewoodform-container-center-input">
-              <div className="input-title">
-                The Project you are interested in*
-              </div>
-              <select name="project" required defaultValue={"The Ridgewood"}>
-                <option>--Select an Option--</option>
-                <option value="The Ridgewood">The Ridgewood</option>
-              </select>
-            </div> */}
             <div className="ridgewoodform-container-center-input">
               <div className="input-title">Country*</div>
               <select name="country" required>

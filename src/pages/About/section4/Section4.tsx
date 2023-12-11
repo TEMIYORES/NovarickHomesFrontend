@@ -1,4 +1,3 @@
-import React from "react";
 import "./section4.scss";
 import vision from "./visionary.png";
 import leadership from "./leadership.png";

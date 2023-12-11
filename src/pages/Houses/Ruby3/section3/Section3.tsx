@@ -1,4 +1,3 @@
-import React from "react";
 import "./section3.scss";
 import {
   BalconyOutlined,

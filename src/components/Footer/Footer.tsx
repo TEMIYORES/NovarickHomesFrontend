@@ -8,12 +8,11 @@ import {
   Twitter,
   YouTube,
 } from "@mui/icons-material";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Img87 } from "../../assets/images";
 import "./footer.scss";
 import Container from "../Container";
 const Footer = () => {
-  const navigate = useNavigate();
   return (
     <>
       <div className="bg-[#f8f9fb]">

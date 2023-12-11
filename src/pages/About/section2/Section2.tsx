@@ -1,19 +1,5 @@
-import React, { useEffect, useState } from "react";
 import "./section2.scss";
 const Section2 = () => {
-  const [isMobile, setIsMobile] = useState(600);
-
-  const handleResize = () => {
-    if (window.innerWidth <= 1024) {
-      setIsMobile(400);
-    } else {
-      setIsMobile(false);
-    }
-  };
-  // create an event listener
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  });
   return (
     <>
       <div className="about-section2">
@@ -37,10 +23,8 @@ const Section2 = () => {
               height="350"
               src="https://www.youtube.com/embed/hqjdwSGY0pw?autoplay=1&mute=1"
               title="About Us"
-              frameborder="0"
               style={{ borderRadius: "10px" }}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
             ></iframe>
           </div>
         </div>

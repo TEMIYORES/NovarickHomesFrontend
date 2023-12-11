@@ -1,0 +1,32 @@
+.slider {
+  width: 100%;
+
+  .rec.rec-arrow {
+    background-color: #066756;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+
+    align-items: center;
+    &:hover {
+      background-color: #034236;
+    }
+    &:active,
+    &:focus {
+      background-color: #034236;
+    }
+  }
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
+
+  .slide {
+    img {
+      width: 300px;
+      height: 200px;
+      border-radius: 5px;
+    }
+  }
+}

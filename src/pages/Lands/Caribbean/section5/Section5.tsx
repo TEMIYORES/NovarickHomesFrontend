@@ -1,9 +1,8 @@
-import React from "react";
 import "./section5.scss";
 import Caribbeanswiper from "../../../../components/CaribbeanSwiper/CaribbeanSwiper";
 const caribbeanbrochure = "http://localhost:3000/files/caribbean_brochure.pdf";
 
-const DownloadFileAtUrl = (url) => {
+const DownloadFileAtUrl = (url:any) => {
   const aTag = document.createElement("a");
   aTag.href = url;
   aTag.setAttribute("download", "CARRIEBEAN LAKE CITY BROCHURE");

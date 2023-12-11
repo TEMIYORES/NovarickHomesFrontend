@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./section8.scss";
 const standard_600 = [
   {
@@ -107,7 +107,7 @@ const lagoon_500 = [
 const Section8 = () => {
   const [priceplan, setPricePlan] = useState("standard");
   let data = [];
-  let data1 = [];
+  let data1: any = [];
   switch (priceplan) {
     case "standard":
       data = standard_600;
@@ -135,19 +135,19 @@ const Section8 = () => {
         <div className="caribbean-section8-pricing-header">
           <h2
             onClick={() => setPricePlan("standard")}
-            className={priceplan == "standard" ? "active" : null}
+            className={`{priceplan == "standard" ? "active" : null}`}
           >
             Residental (Standard){" "}
           </h2>
           <h2
             onClick={() => setPricePlan("lakeview")}
-            className={priceplan == "lakeview" ? "active" : null}
+            className={`priceplan == "lakeview" ? "active" : null`}
           >
             Residental (Lake View){" "}
           </h2>
           <h2
             onClick={() => setPricePlan("lagoon")}
-            className={priceplan == "lagoon" ? "active" : null}
+            className={`priceplan == "lagoon" ? "active" : null`}
           >
             Residental (Lagoon View){" "}
           </h2>
@@ -190,7 +190,7 @@ const Section8 = () => {
             <>
               <div className="price-plan-heading">300 SQM</div>
               <div className="caribbean-section8-container-price-plan-container">
-                {data1.map((item, index) => {
+                {data1.map((item: any, index: any) => {
                   return (
                     <div
                       className="price-plan-container-price-plan-card"

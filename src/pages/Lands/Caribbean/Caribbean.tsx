@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Banner from "../../../components/Banner/Banner";
 import PriceBanner from "../../../components/PriceBanner/PriceBanner";
 import Ridgewoodform from "../../../components/Ridgewoodform/Ridgewoodform";
 import "./caribbean.scss";

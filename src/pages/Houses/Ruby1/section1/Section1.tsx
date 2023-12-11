@@ -1,4 +1,3 @@
-import React from "react";
 import { Img87 } from "../../../../assets/images";
 import "./section1.scss";
 import SwiperComp from "../../../../components/Swiper/Swiper";

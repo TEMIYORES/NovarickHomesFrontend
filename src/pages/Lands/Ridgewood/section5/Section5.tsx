@@ -1,9 +1,8 @@
-import React from "react";
 import "./section5.scss";
 import RidgewoodSwiper from "../../../../components/RidgewoodSwiper/RidgewoodSwiper";
 const ridgewood_brochure = "http://localhost:3000/files/ridgewood_brochure.pdf";
 
-const DownloadFileAtUrl = (url) => {
+const DownloadFileAtUrl = (url: any) => {
   const aTag = document.createElement("a");
   aTag.href = url;
   aTag.setAttribute("download", "THE RIDGEWOOD LAGOS BROCHURE");

@@ -1,4 +1,3 @@
-import React from "react";
 import "./section2.scss";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import DirectionsBoatIcon from "@mui/icons-material/DirectionsBoat";

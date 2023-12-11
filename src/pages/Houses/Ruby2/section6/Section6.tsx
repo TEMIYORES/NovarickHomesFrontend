@@ -1,5 +1,4 @@
-import React from "react";
-import { ImageSlider } from "../../../components";
+import ImageSlider from "../../../../components/ImageSlider/ImageSlider";
 
 const Section6 = () => {
   return (

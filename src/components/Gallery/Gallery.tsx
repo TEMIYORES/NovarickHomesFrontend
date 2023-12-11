@@ -1,8 +1,7 @@
-import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y, Zoom } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, Zoom } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -20,7 +19,7 @@ import ruby3_5 from "../Swiper/Ruby 3 interior 1.jpg";
 import ruby3_6 from "../Swiper/Ruby 3 interior 2.jpg";
 import ruby3_7 from "../Swiper/Ruby 3 .jpg";
 import ruby3_8 from "../Swiper/RUBY3 3DG.jpg";
-const Gallery = ({ name }) => {
+const Gallery = () => {
   const images = [
     {
       image: Img47,

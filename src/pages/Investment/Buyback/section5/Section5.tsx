@@ -1,10 +1,8 @@
-import React from "react";
-
-import Ruby3Slider from "../../../components/ruby3Slider/ruby3Slider";
+import ImageSlider from "../../../../components/ImageSlider/ImageSlider";
 import "./section5.scss";
-const buybackbrochure = "http://localhost:3000/files/buyback_brochure.pdf";
+const buybackbrochure = "../../../../public/files/buyback_brochure.pdf";
 
-const DownloadFileAtUrl = (url) => {
+const DownloadFileAtUrl = (url: any) => {
   const aTag = document.createElement("a");
   aTag.href = url;
   aTag.setAttribute("download", "RUBY 3 BROCHURE");
@@ -50,7 +48,7 @@ const Section5 = () => {
             </button>
           </div>
           <div className="buyback-section5-container-left">
-            <buybackSlider />
+            <ImageSlider />
           </div>
         </div>
       </div>
