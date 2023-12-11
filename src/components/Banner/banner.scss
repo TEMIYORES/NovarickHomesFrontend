@@ -1,0 +1,13 @@
+.banner {
+  background-color: gray;
+  height: 300px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 4rem;
+    color: white;
+  }
+}

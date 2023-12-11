@@ -1,0 +1,169 @@
+@use "../../../variables.scss" as *;
+
+.home-section5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 6rem 0;
+  .home-section5-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    .home-section5-container-left {
+      width: 100%;
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .home-section5-container-left-img-container {
+        max-width: 100%;
+        img {
+          width: 100%;
+          height: 500px;
+          max-width: 500px;
+          object-fit: cover;
+          border: 1px solid $gold;
+          border-radius: 1rem;
+          @media screen and (max-width: 768px) {
+            height: 400px;
+          }
+          @media screen and (max-width: 640px) {
+            height: 300px;
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        flex: 3;
+      }
+    }
+    .home-section5-container-right {
+      flex: 3;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 30px;
+      @media screen and (max-width: 320px) {
+        width: 90%;
+        font-weight: 500;
+      }
+      .home-section5-container-right-top {
+        font-size: 1.5rem;
+        color: $black;
+        font-weight: 700;
+        @media screen and (max-width: 768px) {
+          font-weight: 600;
+        }
+        @media screen and (max-width: 640px) {
+          font-weight: 500;
+        }
+        @media screen and (max-width: 320px) {
+          font-weight: normal;
+        }
+      }
+      .home-section5-container-right-bottom {
+        color: $green;
+        font-style: normal;
+        font-size: 1.2rem;
+        position: relative;
+        font-weight: 500;
+        @media screen and (max-width: 640px) {
+          text-align: right;
+        }
+        &::before {
+          z-index: 2;
+          display: block;
+          top: -65px;
+          left: -95px;
+          width: 100px;
+          height: 100px;
+          background-image: url("../../../assets/images/arrow.svg");
+          background-repeat: no-repeat;
+          content: "";
+          position: absolute;
+          background-size: contain;
+          @media screen and (max-width: 640px) {
+            display: none;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 640px) {
+      flex-direction: column;
+    }
+  }
+  .home-section5-desc {
+    margin: 4rem auto 0;
+    font-size: 3rem;
+    // font-family: "Domine", serif;
+    text-align: center;
+    color: $gold;
+    font-weight: 600;
+    @media screen and (max-width: 640px) {
+      font-weight: 500;
+      font-size: 2rem;
+    }
+  }
+  .home-section5-customer-testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $green;
+    gap: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    @media screen and (max-width: 640px) {
+      font-size: 1rem;
+    }
+    .line {
+      width: 100px;
+      height: 0px;
+      border: 0.5px solid $green;
+      @media screen and (max-width: 640px) {
+        width: 50px;
+      }
+    }
+  }
+
+  .home-section5-customer-reviews {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    .home-section5-customer-reviews-trend {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      padding: 0;
+      .customer-reviews-trend {
+        display: flex;
+        overflow-x: hidden;
+        white-space: nowrap;
+        li {
+          a {
+            display: block;
+            color: white;
+            border: 1px solid $green;
+            text-decoration: none;
+            margin: 5px;
+            padding: 6px 25px;
+            border-radius: 5px;
+            overflow: hidden;
+          }
+          &:nth-child(even) > a {
+            background-color: $gold;
+          }
+          &:nth-child(odd) > a {
+            background-color: $green;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

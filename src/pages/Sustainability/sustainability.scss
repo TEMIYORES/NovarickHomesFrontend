@@ -1,0 +1,43 @@
+.sustainability {
+  .sustainability-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    .sustainability-container-header {
+      color: #066756;
+      position: relative;
+      text-align: center;
+      &::before {
+        content: "";
+        width: 200px;
+        height: 0px;
+        position: absolute;
+        bottom: -10px;
+        left: 35%;
+        border: 2px solid #ebb069;
+        @media screen and (max-width: 1080px) {
+          width: 100px;
+          left: 45%;
+        }
+        @media screen and (max-width: 640px) {
+          display: none;
+        }
+      }
+    }
+    .sustainability-content {
+      .sustainability-content-body-container {
+        .sustainability-content-header {
+          font-weight: 700;
+          color: #066756;
+        }
+        .sustainabilty-content-body {
+          line-height: 1.5em;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

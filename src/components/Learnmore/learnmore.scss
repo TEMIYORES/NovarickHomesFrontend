@@ -1,0 +1,27 @@
+.learnMore {
+  position: relative;
+  text-decoration: none;
+  color: #7f603a;
+  cursor: pointer;
+  font-size: 14px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: var(--afterColor, #7f603a);
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s all ease;
+  }
+  &:hover::after {
+    width: 0%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .learnMore {
+    font-size: 12px;
+  }
+}

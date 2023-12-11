@@ -1,0 +1,17 @@
+@use "../../variables.scss" as *;
+.home-featured {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 9rem;
+  .home-featured-container {
+    width: 90%;
+    margin: 0 auto;
+    color: $gold;
+    font-size: 2rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

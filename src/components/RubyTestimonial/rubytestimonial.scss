@@ -1,0 +1,59 @@
+@use "../../variables.scss" as *;
+.testimonial-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0px;
+  h1 {
+    width: max-content;
+    font-size: 3.5rem;
+    color: $green;
+    margin-bottom: 1em;
+    position: relative;
+    &::before {
+      content: "";
+      width: 100px;
+      height: 0px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border: 2px solid #ebb069;
+      @media screen and (max-width: 768px) {
+        left: 30%;
+      }
+    }
+  }
+  .ruby-comp-container {
+    width: 60%;
+    .ruby-comp-customer-review {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      border: 5px double $gold;
+      padding-bottom: 20px;
+      .ruby-comp-customer-review-ratings {
+        margin-top: 10px;
+      }
+      img {
+        width: 100%;
+      }
+      .ruby-comp-customer-review-desc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1rem;
+        color: $green;
+        padding: 0 0.75em;
+      }
+      .ruby-comp-customer-review-name {
+        color: $gold;
+        font-size: 18px;
+        margin-top: 15px;
+        font-weight: 600;
+      }
+    }
+  }
+}
